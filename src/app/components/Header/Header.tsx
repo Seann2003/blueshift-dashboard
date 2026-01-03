@@ -93,6 +93,8 @@ export default function HeaderContent() {
                     icon: { name: "Path", size: 18 },
                     selected: isPaths,
                     onClick: () => router.push("/"),
+                    className:
+                      "cursor-pointer hover:text-shade-primary transition",
                   },
                   {
                     label: t("header.courses"),
@@ -100,6 +102,8 @@ export default function HeaderContent() {
                     icon: { name: "Lessons", size: 18 },
                     selected: isCourses,
                     onClick: () => router.push("/courses"),
+                    className:
+                      "cursor-pointer hover:text-shade-primary transition",
                   },
                   {
                     label: t("header.challenges"),
@@ -107,6 +111,8 @@ export default function HeaderContent() {
                     icon: { name: "Challenge", size: 18 },
                     selected: isChallenges,
                     onClick: () => router.push("/challenges"),
+                    className:
+                      "cursor-pointer hover:text-shade-primary transition",
                   },
                   {
                     label: t("header.perks"),
@@ -114,6 +120,8 @@ export default function HeaderContent() {
                     icon: { name: "Perks", size: 18 },
                     selected: pathname === "/perks",
                     onClick: () => router.push("/perks"),
+                    className:
+                      "cursor-pointer hover:text-shade-primary transition",
                   },
                 ]}
                 variant="tab"
